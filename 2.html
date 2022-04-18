@@ -4,22 +4,62 @@
   <title>WEB-CSS1</title>
   <meta charset="utf-8">
   <style>
+    body {
+      margin: 0;
+    }
     a {
       color:red;
       text-decoration: none;
     }
+    .saw {
+      color:gray;
+    }
+    #active {
+        color:blue;
+        text-decoration: underline;
+    }
     h1 {
       font-size: 60px;
       text-align: center;
+      border-bottom: 1px solid gray;
+      margin: 0px;
+      padding: 20px;
+    }
+    ul {
+      border-right: 1px solid gray;
+      margin:0;
+      width:100px;
+      padding: 20px;
+    }
+    #grid {
+      display: grid;
+      grid-template-columns: 150px 1fr;
+    }
+    ol {
+      border-bottom: 1px solid gray;
+      margin: 0;}
+
+    @media(max-width: 800px) {
+      #grid {
+        display: block;
+        }
+      ul {
+        border-right: none;
+        }
+    h1 {
+      border-bottom: none;
+        }
     }
   </style>
 </head>
 <body>
   <h1><a href="index.html">WEB</a></h1>
+<div id="grid">
   <ul>
-    <li><a href="1.html">1. HTML</a></li>
-    <li><a href="2.html" style="color:blue;text-decoration:underline">2. CSS</a></li>
-    <li><a href="3.html">3. JavaScript</a></li>
+    <li><a href="1.html" class="saw">1. HTML</a></li>
+    <li><a href="2.html" class="saw" id="active">2. CSS</a></li>
+    <li><a href="3.html" class="saw">3. JavaScript</a></li>
+    <li><a href="box.html"class="saw"> *box</a></li>
   </ul>
 <!--
   <h1><a href="index.html"><font color="red">WEB</font></a></h1>
@@ -29,6 +69,7 @@
     <li><a href="3.html"><font color="red">3. JavaScript</font></a></li>
   </ul>
 -->
+  <div>
   <ol>
     <li>HTML</li>
     <li>CSS</li>
@@ -46,7 +87,13 @@
     <li><h4><strong>a {font-size: ~~}</strong></h4> : a태그가 붙은 모든 코드의 텍스트 크기를 변경합니다.</li>
     <li><h4><strong>style="color:~~"</strong></h4> : HTML 태그문 안에 사용하는 속성 코드로, 해당 텍스트의 색상을 변경합니다.</li>
     <li><h4><strong>style="text-decoration:~~"</strong></h4> : HTML 태그문 안에 사용하는 속성 코드로, 해당 텍스트의 꾸밈을 변경합니다.</li>
-
+    <li><h4><strong>class=""</strong></h4> : HTML 태그문 안에 사용하는 속성 코드로, 태그들의 그룹을 지정해줍니다. css문으로 사용시 해당 그룹명 앞에 .을 붙입니다.</li>
+    <li><h4><strong>id=""</strong></h4> : HTML 태그문 안에 사용하는 속성 코드로, 태그들의 그룹을 지정해주고 최우선 순위를 부여합니다. css문으로 사용시 해당 그룹명 앞에 #을 붙입니다. 단 한번만 사용 가능.</li>
+    <li><h4><strong>div</strong></h4> : 디자인을 위해 쓰이는 태그로, 블럭 레벨 단위로 텍스트를 지정해줍니다.</li>
+    <li><h4><strong>span</strong></h4> : 디자인을 위해 쓰이는 태그로, 인라인 레벨 단위로 텍스트를 지정해줍니다.</li>
+    <li><h4><strong>media 쿼리</strong></h4> : style 문 아래에 @media 로 사용되는 태그로, 반응형 미디어 디자인을 다루기 위해 사용됩니다. <br> ex) 화면 크기가 800px이하일 때 본문과 목록의 위치를 조정할 경우, max나 min을 사용해 쿼리문 제작.</li>
   </p>
+  </div>
+</div>
 </body>
 </html>
