@@ -3,54 +3,7 @@
 <head>
   <title>WEB-CSS1</title>
   <meta charset="utf-8">
-  <style>
-    body {
-      margin: 0;
-    }
-    a {
-      color:red;
-      text-decoration: none;
-    }
-    .saw {
-      color:gray;
-    }
-    #active {
-        color:blue;
-        text-decoration: underline;
-    }
-    h1 {
-      font-size: 60px;
-      text-align: center;
-      border-bottom: 1px solid gray;
-      margin: 0px;
-      padding: 20px;
-    }
-    ul {
-      border-right: 1px solid gray;
-      margin:0;
-      width:100px;
-      padding: 20px;
-    }
-    #grid {
-      display: grid;
-      grid-template-columns: 150px 1fr;
-    }
-    ol {
-      border-bottom: 1px solid gray;
-      margin: 0;}
-
-    @media(max-width: 800px) {
-      #grid {
-        display: block;
-        }
-      ul {
-        border-right: none;
-        }
-    h1 {
-      border-bottom: none;
-        }
-    }
-  </style>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <h1><a href="index.html">WEB</a></h1>
@@ -92,6 +45,9 @@
     <li><h4><strong>div</strong></h4> : 디자인을 위해 쓰이는 태그로, 블럭 레벨 단위로 텍스트를 지정해줍니다.</li>
     <li><h4><strong>span</strong></h4> : 디자인을 위해 쓰이는 태그로, 인라인 레벨 단위로 텍스트를 지정해줍니다.</li>
     <li><h4><strong>media 쿼리</strong></h4> : style 문 아래에 @media 로 사용되는 태그로, 반응형 미디어 디자인을 다루기 위해 사용됩니다. <br> ex) 화면 크기가 800px이하일 때 본문과 목록의 위치를 조정할 경우, max나 min을 사용해 쿼리문 제작.</li>
+    <li><h4><strong>link rel="stylesheet" href="~~"</strong></h4> : 저장된 css코드문을 불러오는 코드입니다.</li>
+
+  </ol>
   </p>
   </div>
 </div>

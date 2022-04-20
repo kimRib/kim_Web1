@@ -3,25 +3,43 @@
 <head>
   <title>WEB-JavaScript1</title>
   <meta charset="utf-8">
-  <style>
-    a {
-      color:red;
-      text-decoration: none;
-    }
-    h1 {
-      font-size: 60px;
-      text-align: center;
-    }
-  </style>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <h1><a href="index.html">WEB</a></h1>
+  <input type="button" value="밤 모드" onclick="
+    var target = document.querySelector('body');
+  if (this.value === '밤 모드') {
+    target.style.backgroundColor='black';
+    target.style.color='white';
+    this.value = '낮 모드';
+  } else {
+    target.style.backgroundColor='white';
+    target.style.color='black';
+    this.value = '밤 모드';
+  }
+  ">
+
+
+<!--
+  <input type="button" value="밤 모드" onclick="
+  document.querySelector('body').style.backgroundColor='black';
+  document.querySelector('body').style.color='white';
+  ">
+  <input type="button" value="낮 모드" onclick="
+  document.querySelector('body').style.backgroundColor='white';
+  document.querySelector('body').style.color='black';
+  ">
+-->
+
+<div id="grid">
   <ul>
-    <li><a href="1.html">1. HTML</a></li>
-    <li><a href="2.html">2. CSS</a></li>
-    <li><a href="3.html" style="color:blue;text-decoration:underline">3. JavaScript</a></li>
-    <li><a href="box.html"> *box</a></li>
+    <li><a href="1.html" class="saw">1. HTML</a></li>
+    <li><a href="2.html" class="saw">2. CSS</a></li>
+    <li><a href="3.html" class="saw" id="active">3. JavaScript</a></li>
+    <li><a href="box.html" class="saw"> *box</a></li>
   </ul>
+  <div>
   <ol>
     <li>HTML</li>
     <li>CSS</li>
@@ -30,6 +48,23 @@
 
   <h2><a href="https://namu.wiki/w/JavaScript" target="_blank" title=나무위키>JavaScript</a>란 무엇인가?</h2><br>
 
-  코딩 배우기 세 번째, 이 페이지는 JavaScript를 위한 페이지이며 연습용입니다.
+  <h3>코딩 배우기 세 번째, 이 페이지는 JavaScript를 위한 페이지이며 연습용입니다.</h3>
+  <p>
+  자바 스크립트는 사용자와 웹 페이지가 상호작용할 수 있게 만드는 언어이다.
+  <br>기존 정적인 HTML 페이지에서 사용자의 선택으로 페이지의 동적인 변화를 주는 것이 목적이다.
+</p>
+<ol>
+  <li><h4><strong>document.write("~~")</strong></h4> : 스크립트 태그 안에 들어가며, 동적인 텍스트 결과값을 나타냅니다.</li>
+  <li><h4><strong>input type="~~" 이벤트="~~"</strong></h4> : 버튼이나 텍스트 등의 타입을 정하면, 이벤트에 해당하는 행동을 했을 시 어떤 반응을 나타냅니다.</li>
+  <li><h4><strong>비교연산자 === </strong></h4> : 좌항과 우항의 값이 같을 경우 true, 다를 경우 false를 출력한다. (여기서 true와 false를 Boolean이라고 한다.)</li>
+  <li><h4><strong>비교연산자 &lt; , &gt; </strong></h4> : 좌항과 우항의 값을 부등호로 계산해 맞을 경우 true, 틀릴 경우 false를 출력한다.</li>
+  <li><h4><strong>조건문 if(t/f) {~~} else {~~} </strong></h4> : if문의 계산이 true인 경우 바로 뒤의 값을 출력하고, 틀릴 경우 else 뒤의 값을 출력한다. </li>
+  <li><h4><strong>변수 창출 var target </strong></h4> : 태그의 중복을 줄이기 위해 하나의 변수를 만들어 냅니다. </li>
+  <li><h4><strong>중복 제거 if(this) </strong></h4> : if문에 this를 사용함으로써 id 태그를 지울 수 있습니다. </li>
+</ol>
+</ol>
+
+ </div>
+</div>
 </body>
 </html>

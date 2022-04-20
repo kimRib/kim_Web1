@@ -3,54 +3,16 @@
 <head>
   <title>WEB-html1</title>
   <meta charset="utf-8">
-  <style>
-  body {
-    margin: 0;
-  }
-  a {
-    color:red;
-    text-decoration: none;
-  }
-  .saw {
-    color:gray;
-  }
-  #active {
-      color:blue;
-      text-decoration: underline;
-  }
-  h1 {
-    font-size: 60px;
-    text-align: center;
-    border-bottom: 1px solid gray;
-    margin: 0px;
-    padding: 20px;
-  }
-  ul {
-    border-right: 1px solid gray;
-    margin:0;
-    width:100px;
-    padding: 20px;
-  }
-  #grid {
-    display: grid;
-    grid-template-columns: 150px 1fr;
-  }
-  ol {
-    border-bottom: 1px solid gray;
-    margin: 0;
-
-
-  }
-  </style>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <h1><a href="index.html">WEB</a></h1>
 <div id="grid">
   <ul>
-    <li><a href="1.html" style="color:blue;text-decoration:underline">1. HTML</a></li>
-    <li><a href="2.html">2. CSS</a></li>
-    <li><a href="3.html">3. JavaScript</a></li>
-    <li><a href="box.html"> *box</a></li>
+    <li><a href="1.html" class="saw" id="active">1. HTML</a></li>
+    <li><a href="2.html" class="saw">2. CSS</a></li>
+    <li><a href="3.html" class="saw">3. JavaScript</a></li>
+    <li><a href="box.html" class="saw"> *box</a></li>
   </ul>
   <div>
   <ol>
@@ -61,7 +23,7 @@
 
   <h2><a href="https://namu.wiki/w/HTML" target="_blank" title=나무위키>HTML</a>이란 무엇인가?</h2><br>
 
-  <h3><strong>HTML에서 사용하는 코드 태그에 대해 정리합니다.</strong></h3>
+  <h3>HTML에서 사용하는 코드 태그에 대해 정리합니다.</h3>
   <br>
   <p>
   <ol>
@@ -84,6 +46,9 @@
     <li><h4><strong>input type="checkbox"</strong></h4> : 체크 박스를 만듭니다.</li>
     <li><h4><strong>font color=""</strong></h4> : 글자의 색상을 변경합니다.</li>
     <li><h4><strong>style</strong></h4> : 코드의 언어 타입을 변경하는 것을 선언합니다.</li>
+    <li><h4><strong>script</strong></h4> : 자바 스크립트를 선언합니다.</li>
+
+  </ol>
 </p>
 <p>
 </div>
