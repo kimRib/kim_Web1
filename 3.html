@@ -4,34 +4,14 @@
   <title>WEB-JavaScript1</title>
   <meta charset="utf-8">
   <link rel="stylesheet" href="style.css">
+  <script src="colors.js"></script>
 </head>
 <body>
   <h1><a href="index.html">WEB</a></h1>
   <input type="button" value="밤 모드" onclick="
-    var target = document.querySelector('body');
-  if (this.value === '밤 모드') {
-    target.style.backgroundColor='black';
-    target.style.color='white';
-    this.value = '낮 모드';
-  } else {
-    target.style.backgroundColor='white';
-    target.style.color='black';
-    this.value = '밤 모드';
-  }
+    밤낮바꾸기(this);
   ">
-
-
-<!--
-  <input type="button" value="밤 모드" onclick="
-  document.querySelector('body').style.backgroundColor='black';
-  document.querySelector('body').style.color='white';
-  ">
-  <input type="button" value="낮 모드" onclick="
-  document.querySelector('body').style.backgroundColor='white';
-  document.querySelector('body').style.color='black';
-  ">
--->
-
+ <button type="button" onclick="location.href= 'ex2.html';">함수</button>
 <div id="grid">
   <ul>
     <li><a href="1.html" class="saw">1. HTML</a></li>
@@ -59,8 +39,10 @@
   <li><h4><strong>비교연산자 === </strong></h4> : 좌항과 우항의 값이 같을 경우 true, 다를 경우 false를 출력한다. (여기서 true와 false를 Boolean이라고 한다.)</li>
   <li><h4><strong>비교연산자 &lt; , &gt; </strong></h4> : 좌항과 우항의 값을 부등호로 계산해 맞을 경우 true, 틀릴 경우 false를 출력한다.</li>
   <li><h4><strong>조건문 if(t/f) {~~} else {~~} </strong></h4> : if문의 계산이 true인 경우 바로 뒤의 값을 출력하고, 틀릴 경우 else 뒤의 값을 출력한다. </li>
-  <li><h4><strong>변수 창출 var target </strong></h4> : 태그의 중복을 줄이기 위해 하나의 변수를 만들어 냅니다. </li>
+  <li><h4><strong>변수 창출 var (target) </strong></h4> : 태그의 중복을 줄이기 위해 하나의 변수를 만들어 냅니다. </li>
   <li><h4><strong>중복 제거 if(this) </strong></h4> : if문에 this를 사용함으로써 id 태그를 지울 수 있습니다. </li>
+  <li><h4><strong>반복문 while(t/f) {~~} </strong></h4> : 조건이 참일 경우, 지정된 태그문을 반복합니다. ex) 변수var x = 0; while (x &lt 3) {태그문} </li>
+  <li><h4><strong>document.querySelector('~~') </strong></h4> : 괄호 안에 있는 태그가 달린 선택자 하나를 출력합니다.</li>
 </ol>
 </ol>
 

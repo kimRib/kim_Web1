@@ -7,10 +7,48 @@
 
   <body>
     <script>
-      document.write("hello wolrd");
+      document.write("hello wolrd <br>");
+      var x = 0;
+      while(x < 5) {
+        document.write('반복문 연습1 <br>');
+        document.write('반복문 연습2 <br>');
+        x = x + 1;
+      }
     </script>
     <input type="button" value="hi" onclick="alert('안녕하세요')">
     <input type="text">
+
+<p>
+ <hi>반복과 배열</hi>
+ <script>
+    var 메뉴 = ['짜장면','햄버거','치킨','피자', '라면','김밥'];
+ </script>
+ <h2>오늘 저녁 메뉴</h2>
+ <ul>
+   <script>
+      var i = 0;
+      while(i < 메뉴.length) {
+      document.write('<li>'+메뉴[i]+'</li>');
+      i = i + 1;
+    }
+    </script>
+ </ul>
+ 
+ <script>
+    var 링크 = ['1','2','3','index'];
+ </script>
+ <h2>돌아가기 링크</h2>
+ <ul>
+   <script>
+      var i = 0;
+      while(i < 링크.length) {
+      document.write('<li>'+링크[i]+'</li>');
+      i = i + 1;
+    }
+   </script>
+
+ </ul>
+</p>
   </body>
 
 </html>

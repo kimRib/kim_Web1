@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <h1>JavaScript function</h1>
+    <button type="button" onclick="location.href= '3.html';">돌아가기</button>
+    <p>
+      JavaScript의 기능 중 함수에 대해 알아보자.
+      </p>
+      <h2>Basic</h2>
+        <ul>
+          <script>
+            function jump() {
+              document.write('<li>~~</li>');
+            }
+              document.write('<li>1</li>');
+              document.write('<li>2</li>');
+              jump();
+              document.write('<li>3</li>');
+              document.write('<li>4</li>');
+              jump();
+              document.write('<li>5</li>');
+          </script>
+        </ul>
+      <h2>Parameter(매개변수) & Argument(인자)</h2>
+        어떤 계산식에서 사용하고자 하는 재료들을 Argument, 인자라고 하고 그 인자를 사용하도록 지정한 함수의 변수를 Parameter, 매개변수라고 한다.<br>
+        ex) 내가 답을 원하고자 하는 식 : 2+3 일 때, 2와3은 인자. 답을 구하기 위해 만든 함수 태그 : function sum(x,y) 일 때, x와y가 매개변수이다.<br>
+
+        <script>
+          function sum(x,y) {
+            document.write(x+y+'<br>');
+          }
+          sum(5,5);
+          sum(10,10);
+          sum(123,456);
+        </script>
+      <h2>Return(출력)</h2>
+        <script>
+          function sum2(x,y) {
+            return x+y;
+          }
+          document.write(sum2(5,5)+'<br>');
+          document.write('<div style="color:blue;">'+sum2(10,10)+'</div>');
+          document.write('<div style="font-size:2rem;">'+sum2(123,456)+'</div>');
+        </script>
+    <h3>함수의 기능</h3>
+    함수는 중복되는 태그들의 식을 정리하여 하나의 head태그문으로 만들면 더욱 효율적인 코딩을 할 수 있게 한다.
+     즉, 하나의 함수식으로 여러 태그의 상태를 변화시킬 수 있다는 것이다.
+  </body>
+</html>
